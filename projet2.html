@@ -81,7 +81,21 @@
                                 marker.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
                             </code>
                           </pre>
-                          <p class="text-muted mb-0"> Il existe différentes manières de stocker des données, telle que les sharedPrefs, permettant de stocker quelque données directement sur le téléphone de l'utilsateur à l'aide d'un couple clé valeur
+                          <p class="text-muted mb-0"> Il existe différentes manières de stocker des données, telle que les sharedPrefs,
+                              permettant de stocker quelque données directement sur le téléphone de l'utilsateur à l'aide d'un couple clé valeur, 
+                              de plus c'est relativement simple à mettre en place puisque c'est une librairie propre à Android.
+                              <br>
+                              Une autre manière de stocker des données est d'utiliser un fichier local, stockant les données avec un format xml ou csv, 
+                              cette méthode permet de partager des données entre plusieurs applications.
+                              <br>
+                              Enfin je pourrait utiliser une base de données locale ou distante, ce qui me permettrait de stocker des données de manière structuré, 
+                              ainsi que d'accèder à distance et de partager des données entre les usagers pour une base de données distantes.
+
+                          </p>
+                          <p class="text-muted mb-0">
+                              Puisque je veux stocker que peu de valeur, et que ces valeurs sont propres à l'utilisateur et utilisé seulement par 
+                              lui j'ai décidé d'utiliser les sharedPrefs.
+                          </p>
             </div>
         </section>
        
