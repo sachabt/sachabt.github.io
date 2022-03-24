@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Maintenance jeu projet spécialisé</title>
+        <title>Maintenance jeu projet specialisé</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap Icons-->
@@ -38,11 +38,11 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Projet 3</h1>
+                        <h1 class="text-white font-weight-bold">Jeu godot</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Jeu développé avec godot</p>
+                        <p class="text-white-75 mb-5">Maintenance jeu projet specialisé</p>
                         <a class="btn btn-primary btn-xl" href="#about">Présentation</a>
                     </div>
                 </div>
@@ -55,9 +55,9 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">présentation</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4"> Lors de mon semestre au cégep de Matane j'ai pu réaliser comme projet un jeu en utilisant godot. 
+                        <p class="text-white-75 mb-4">Lors de mon semestre au cégep de Matane j'ai pu réaliser comme projet un jeu en utilisant godot. 
                             Ce jeu de type rpg propose d'explorer différentes îles peuplé de monstres et de trésors.</p>
-                        <a class="btn btn-light btn-xl" href="#services">GitHub</a>
+                            <a href="https://github.com/sachabt/maintenance-projet-android" class="text-white-75 mb-4" >GitHub</a>
                     </div>
                 </div>
             </div>
@@ -65,101 +65,67 @@
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">blabla</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Programmation Java</h3>
-                            <p class="text-muted mb-0">
-                                J'ai pu développer de nombreux programmes et logiciel durant mes études, j'ai par exemple codé une application de compréhension orale d'anglais en utilisant javaFx, j'ai aussi développer une application mobile android avec Android studio.
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Programmation SQL</h3>
-                            <p class="text-muted mb-0">
-                                Je maitrise le développement et la gestion de base de données SQL et PL/SQL.
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Programmation PHP</h3>
-                            <p class="text-muted mb-0">                                
-                                Je maitrise le développement de site utilisant le PHP afin de créer des pages web dynamique et en lien avec une base de donnée
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Godot</h3>
-                            <p class="text-muted mb-0">J'ai de l'expérience avec le moteur de jeu godot, j'ai pu ainsi développer un jeu dessus durant mon semestre au cégep de Matane.</p>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="text-center mt-0">Maintenance</h2>
+                    <p class="text-muted mb-0">                                
+                    Au cours de mon semestre d'étude au Cégep de Matane j'ai réalisé une maintenance de ce projet, afin de rajouter une fonctionnalité d'esquive au joueur
+                    avec un retour visuel en utilisant des effets de particules. J'ai décidé de rendre le genre invincible pendant un temps cours avec un boost de vitesse le permettant de s'éloigner du dangers.
+
+                    </p>
+                    <br>
+                    <h2 class="text-center mt-0">Veille technologique</h2>
+                    <p class="text-muted mb-0">
+                        Pour la réalisation de cette maintenance je devais déjà réaliser le côté technique de l'esquive, c'est à dire rendre le joueur invincible pendant un temps cours,
+                        avec un temps d'attente avant de pouvoir utiliser à nouveau cette capacité. Pour cela j'ai créer deux timer, et lorsque le joueur esquive un booleen desactive les dégats reçus.
+                          
+                        <p class="text-muted mb-0"> Je voulais ajouter un effet visuel pour que le joueur est un retour direct de son action,
+                              pour cela j'avais plusieurs options :
+                              <br>
+                              Les images on un attribut modulate qui permet de changer les couleurs et la transparence du joueur depuis le code, de plus en utilisant une 
+                              animation on peut créer une animation, particulièrement en attribuant les valeurs de modulation à une courbe.
+                              <br>
+                                un shader permet de modifier une image de façon dynamique et cela autant au niveau des couleurs que de sa forme, j'ai ainsi utilisé des shader
+                                pour faire un écran de transition et simuler de l'eau.
+                            <br>
+                                enfin je pouvais utiliser des effets de particules, qui permettent de créer des effets à partir d'image en les manipulants en tant que plusieurs objets avec
+                                une duréee de vie, une vitesse, une couleur, une direction etc... 
+                          </p>
+                          <p class="text-muted mb-0">
+                              Pour cette effet j'ai décidé d'utiliser à la fois la modulation de l'image et les effets de particule, afin de créer un effet de joueur 
+                              semi transparent et créer une sorte d'effet magique autour du joueur. J'ai fait ce choix puisque ces effets sont plus simples à mettre en
+                              place et peuvent être changer facilement.
+                          </p>
             </div>
         </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Maintenance</div>
-                                <div class="project-name">Projet android</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Maintenance</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Maintenance</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
+                <div class="container-fluid p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col-sm-6">
+
+                                <img class="img-fluid" src="/assets/img/projet_tut.png" alt="carte présentant deux marqueur rouge, qui n'ont pas été visité" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Aucun point n'a été visité</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6"></div>
+                        <div class="col-lg-4 col-sm-6">
+                                <img class="img-fluid" src="\assets\img/projet_tut2.png" alt="carte présentant un marqueur vert, qui a été visité, et un marqueur rouge" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Un point a été visité</div>
+                                </div>
+                            </a>
             </div>
         </section>
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0">Contactez moi!</h2>
-                        <hr class="divider" />
-                        <p class="text-muted mb-5">Mon profil vous intéresse ? vous souhaitez avoir plus d'informations ? vous pouvez me contacter dès maintenant</p>
-                    </div>
-                </div>
                
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>+33 695949012</div>
-                        <div>sbelliertoulouzou@gmail.com</div>
+                        <div></div>
                     </div>
                 </div>
             </div>
